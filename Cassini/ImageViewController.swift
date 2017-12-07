@@ -18,19 +18,26 @@ class ImageViewController: UIViewController {
             }
         }
     }
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     private func fetchImage(){
         if let url = imageURL {
-            let urlContents = try? Data(contentsOf: url)
-            if let imageData = urlContents {
-                image = UIImage(data: imageData)
+            
+           spinner.startAnimating()
+            DispatchQueue.global(qos: .userInitiated).async { [weak self ] in
+                let urlContents = try? Data(contentsOf: url)
+                if let imageData = urlContents {
+                    DispatchQueue.main.async {
+                        self?.image = UIImage(data: imageData)
+                    }
+                }
             }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageURL = DemoURL.stanford
+       // imageURL = DemoURL.stanford
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,6 +67,7 @@ class ImageViewController: UIViewController {
             imageView.image = newValue
             imageView.sizeToFit()
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
         
     }
@@ -67,7 +75,7 @@ class ImageViewController: UIViewController {
 }
 
 extension  ImageViewController : UIScrollViewDelegate{
- 
+    
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }

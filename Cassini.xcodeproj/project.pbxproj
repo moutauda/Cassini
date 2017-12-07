@@ -13,6 +13,7 @@
 		335506F01FD80D3C006A779A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335506EE1FD80D3C006A779A /* LaunchScreen.storyboard */; };
 		335506F91FD80EA6006A779A /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335506F81FD80EA6006A779A /* ImageViewController.swift */; };
 		335506FB1FD81902006A779A /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335506FA1FD81902006A779A /* DemoURL.swift */; };
+		33DB56361FD9B4CE0079D653 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DB56351FD9B4CE0079D653 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		335506F11FD80D3C006A779A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		335506F81FD80EA6006A779A /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		335506FA1FD81902006A779A /* DemoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		33DB56351FD9B4CE0079D653 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				335506E91FD80D3C006A779A /* Main.storyboard */,
 				335506F81FD80EA6006A779A /* ImageViewController.swift */,
 				335506FA1FD81902006A779A /* DemoURL.swift */,
+				33DB56351FD9B4CE0079D653 /* CassiniViewController.swift */,
 				335506F11FD80D3C006A779A /* Info.plist */,
 			);
 			path = Cassini;
@@ -150,6 +153,7 @@
 				335506F91FD80EA6006A779A /* ImageViewController.swift in Sources */,
 				335506E61FD80D3C006A779A /* AppDelegate.swift in Sources */,
 				335506FB1FD81902006A779A /* DemoURL.swift in Sources */,
+				33DB56361FD9B4CE0079D653 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
